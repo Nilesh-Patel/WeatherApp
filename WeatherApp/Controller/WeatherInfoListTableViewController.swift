@@ -65,6 +65,9 @@ class WeatherInfoListTableViewController: UITableViewController {
 
     
     //MARK: - API
+    /**
+        Check for internet connection
+    */
     func callAPI(){
         // Check Internet Connection
         if(Utility.isInternetAvailable()){
@@ -74,6 +77,9 @@ class WeatherInfoListTableViewController: UITableViewController {
         }
     }
 
+    /**
+        Retrieve weather data of particular Cities
+    */
     func getWeatherData(){
         LoadingIndicatorView.show(overlayTarget: self.view, loadingText: nil, position: .Top)
         Alamofire.request(AppConstants.API_EndPoint, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil)

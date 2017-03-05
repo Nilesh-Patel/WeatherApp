@@ -37,8 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        let nc = NotificationCenter.default
-        nc.post(name: Notification.Name(rawValue:"internetCheck"), object: nil, userInfo: nil)
+        // Notification object
+        let notification = NotificationCenter.default
+        notification.post(name: Notification.Name(rawValue:"internetCheck"), object: nil, userInfo: nil)
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
