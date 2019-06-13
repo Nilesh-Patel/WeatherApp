@@ -11,6 +11,6 @@ import UIKit
 
 class AppConstants: NSObject {
     //API URL 
-    static let API_EndPoint = "http://api.openweathermap.org/data/2.5/group?id=4163971,2147714,2174003&units=metric&appid=91e3c93b7a5e0a81bab7c9e27a44e581"
+    static let API_EndPoint = "http://api.openweathermap.org/data/2.5/group?id=5101760,6058560,1850147&units=metric&appid=91e3c93b7a5e0a81bab7c9e27a44e581"
     
 }

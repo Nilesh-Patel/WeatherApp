@@ -8,7 +8,7 @@ def all_needed_pods
 pod 'Alamofire'
 pod 'AlamofireNetworkActivityIndicator'
 pod 'SwiftyJSON'
-pod 'ObjectMapper'
+pod 'ObjectMapper', '3.3.0'
 pod 'Toast-Swift'
 end
 
